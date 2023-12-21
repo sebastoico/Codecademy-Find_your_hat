@@ -9,4 +9,8 @@ class Field {
   constructor(field) {
     this.field = field;
   }
+
+  print() {
+    console.log(this.field.map(row => row.join('')).join('\n'));
+  }
 }
